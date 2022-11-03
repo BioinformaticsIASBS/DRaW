@@ -6,7 +6,7 @@ import numpy as np
 class DataLoader:
     def __init__(self, dataSet):
         
-        self.root = 'dataSet/'
+        self.root = 'Dataset/'
         self.dataSet = dataSet
         self.Y = []
         self.X = []
