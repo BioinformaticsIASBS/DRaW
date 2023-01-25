@@ -13,7 +13,7 @@ python score.py
 Same goes for other datasets. Just change the directory path.
 # Performance analysis
 In order to analysis the performance, there is a one extra directory in the root, “Performance_analysis”. By running following command the model is trained on a given dataset and returns its performance metrics, AUC-ROC, AUPR, F1 score, etc.   
-The input parameter “dataset_name” is one the following five datasets’ name. The first one iS COVID-19 DS3 and other four are golden benchmarks. 
+The input parameter “dataset_name” is one the following five datasets’ name. The first one is COVID-19 DS3 and other four are golden benchmarks. 
 'DS3','ic','nr','gpcr','e'
 
 ```bash
