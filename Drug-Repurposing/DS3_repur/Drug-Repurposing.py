@@ -14,9 +14,9 @@ from sklearn.model_selection import KFold
 from sklearn.metrics import roc_curve, auc
 
 
-rootDir = 'covid/'
-rootDirSave = 'covid/models'
-rootDirSaveReper = 'covid/drugReper/'
+rootDir = ''
+rootDirSave = 'models'
+rootDirSaveReper = 'drugReper/'
 # rootDir = ''
 files = [
     'drugsim.csv',

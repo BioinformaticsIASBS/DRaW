@@ -15,8 +15,8 @@ from sklearn.metrics import roc_curve, auc
 
 
 rootDir = ''
-rootDirSave = '/models'
-rootDirSaveReper = '/drugReper/'
+rootDirSave = 'models'
+rootDirSaveReper = 'drugReper/'
 # rootDir = ''
 files = [
     'drugsim.csv',
