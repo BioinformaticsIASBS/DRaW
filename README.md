@@ -1,5 +1,5 @@
 # Introduction
-The DRaW is a convolutional neural network to predict new virus-antiviral interactions VAIs from approved antivirals. The model is in path “Drug-Repurposing”.  The following figure shows the model architecture. To evaluate VAI, the inputs to the DRaW are a virus similarity vector and antiviral similarity vector. These two vectors are concatenated and the resulting vector is fed to the model. The DRaW consists of four Conv1D layer. The last layer has a sigmoid function as the classifier which returns the probability of virus-antiviral association. 
+The [DRaW](https://doi.org/10.1186/s12859-023-05181-8) is a convolutional neural network to predict new virus-antiviral interactions VAIs from approved antivirals. The model is in path “Drug-Repurposing”.  The following figure shows the model architecture. To evaluate VAI, the inputs to the DRaW are a virus similarity vector and antiviral similarity vector. These two vectors are concatenated and the resulting vector is fed to the model. The DRaW consists of four Conv1D layer. The last layer has a sigmoid function as the classifier which returns the probability of virus-antiviral association. 
 ![Alt text](CovidModel.png?raw=true "CovidModel")
 # Running DRaW on COVID-19 datasets
 The DRaW has been applied on three COVID-19 datasets, DS1, DS2, and DS3. There are three subdirectories, “DS1_repur”, “DS2_repur”, and “DS3_repur”, in the “Drug-Repurposing” directory. Each subdirectory has been assigned to one of the mentioned datasets. We put the Draw implementation file for each dataset in each subdirectory separately. This is due to keep the corresponding hyperparameters of each dataset. 
@@ -21,6 +21,27 @@ cd Performance_analysis
 python main.py dataset_name
 ```
 
-DRaW: Prediction of COVID-19 Antivirals by Deep Learning -- An Objection on Using Matrix Factorization
-M. Hashemi, A. Zabihian, M. Hooshmand, S. Gharaghani
+### Citation
+
+```bash
+@Article{Hashemi2023,
+author={Hashemi, S. Morteza
+and Zabihian, Arash
+and Hooshmand, Mohsen
+and Gharaghani, Sajjad},
+title={DRaW: prediction of COVID-19 antivirals by deep learning---an objection on using matrix factorization},
+journal={BMC Bioinformatics},
+year={2023},
+month={Feb},
+day={15},
+volume={24},
+number={1},
+pages={52},
+doi={10.1186/s12859-023-05181-8},
+url={https://doi.org/10.1186/s12859-023-05181-8}
+}
+
+
+
+```
 
